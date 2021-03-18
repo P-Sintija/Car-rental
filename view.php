@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1> ``cheap cars`` </h1>
+<h1> ``Cheap rides`` </h1>
 
 <table border="2" cellspacing="0" cellpadding="10">
     <tr>

@@ -1,1 +1,30 @@
-[{"name":"Honda","model":"Civic","consumption":"7","price":"10000","status":"rent"},{"name":"Audi","model":"A4","consumption":"7","price":"30000","status":"rent"},{"name":"Toyota","model":"Corolla","consumption":"7","price":"20000","status":"available"},{"name":"Volvo","model":"V60","consumption":"9","price":"40000","status":"rent"}]
+[
+  {
+    "name": "Honda",
+    "model": "Civic",
+    "consumption": "7",
+    "price": "10077",
+    "status": "rent"
+  },
+  {
+    "name": "Audi",
+    "model": "A4",
+    "consumption": "7",
+    "price": "30200",
+    "status": "rent"
+  },
+  {
+    "name": "Toyota",
+    "model": "Corolla",
+    "consumption": "7",
+    "price": "28000",
+    "status": "available"
+  },
+  {
+    "name": "Volvo",
+    "model": "V60",
+    "consumption": "9",
+    "price": "40000",
+    "status": "rent"
+  }
+]
