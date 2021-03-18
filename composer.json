@@ -1,0 +1,17 @@
+{
+    "name": "user/car-rental",
+    "authors": [
+        {
+            "name": "P-Sintija",
+            "email": "sintija.putnina@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rental\\": "app/"
+        }
+    }
+}
