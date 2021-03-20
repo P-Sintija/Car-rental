@@ -4,7 +4,7 @@
     "model": "Civic",
     "consumption": "7",
     "price": "10077",
-    "status": "rent"
+    "status": "available"
   },
   {
     "name": "Audi",
@@ -25,6 +25,13 @@
     "model": "V60",
     "consumption": "9",
     "price": "40000",
-    "status": "rent"
+    "status": "in_service"
+  },
+  {
+    "name": "BMW",
+    "model": "X5",
+    "consumption": "9",
+    "price": "56000",
+    "status": "available"
   }
 ]

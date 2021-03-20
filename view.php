@@ -15,8 +15,8 @@
     <tr>
         <th>Name</th>
         <th>Model</th>
-        <th>Fuel consumption<br> l /100 km </th>
-        <th>Price ($) </th>
+        <th>Fuel consumption<br> l /100 km</th>
+        <th>Price ($)</th>
         <th>Status</th>
         <th>Action</th>
     </tr>
@@ -29,16 +29,25 @@
             <td><?php echo $car->getName() ?></td>
             <td><?php echo $car->getModel() ?></td>
             <td><?php echo $car->getFuelConsumption() ?></td>
-            <td><?php echo number_format($car->getPrice()/100,2)  ?></td>
+            <td><?php echo number_format($car->getPrice() / 100, 2) ?></td>
             <td><?php echo $car->getStatus()->getStatus() ?></td>
             <td>
-                <form method="post">
-                    <input type="submit" name= <?php echo $car->getName(); ?>
-                    class="button" value= <?php echo 'rent'; ?>>
 
                 <form method="post">
                     <input type="submit" name= <?php echo $car->getName(); ?>
-                    class="button" value= <?php echo 'return'; ?>>
+                    class="button" value= <?php echo 'rent';
+                    if ($car->getStatus()->getStatus() !== 'available') { ?> disabled <?php } ?>>
+
+                    <form method="post">
+                        <input type="submit" name= <?php echo $car->getName(); ?>
+                        class="button" value= <?php echo 'return';
+                        if ($car->getStatus()->getStatus() === 'available') { ?> disabled <?php } ?>>
+
+                        <form method="post">
+                            <input type="submit" name= <?php echo $car->getName(); ?>
+                            class="button" value= <?php echo 'in_service';
+                            if ($car->getStatus()->getStatus() === 'in_service') { ?> disabled <?php } ?>>
+
             </td>
         </tr>
 

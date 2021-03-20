@@ -17,6 +17,7 @@ class Car
         $this->averageFuelConsumption = $consumption;
         $this->price = $price;
         $this->status = $status;
+
     }
 
     public function getName(): string
@@ -48,6 +49,7 @@ class Car
     {
         return $this->status;
     }
+
 
 }
 
