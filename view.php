@@ -11,6 +11,7 @@
 
 <h1> ``Cheap rides`` </h1>
 
+
 <table border="2" cellspacing="0" cellpadding="10">
     <tr>
         <th>Name</th>
@@ -35,18 +36,20 @@
 
                 <form method="post">
                     <input type="submit" name= <?php echo $car->getName(); ?>
-                    class="button" value= <?php echo 'rent';
-                    if ($car->getStatus()->getStatus() !== 'available') { ?> disabled <?php } ?>>
+                    class="button" value="rent"
+                        <?php if ($car->getStatus()->getStatus() !== 'available') { ?> disabled <?php } ?>>
 
                     <form method="post">
                         <input type="submit" name= <?php echo $car->getName(); ?>
-                        class="button" value= <?php echo 'return';
-                        if ($car->getStatus()->getStatus() === 'available') { ?> disabled <?php } ?>>
+                        class="button" value="return"
+                            <?php if ($car->getStatus()->getStatus() === 'available' ||
+                                $car->getStatus()->getStatus() === 'not available') { ?> disabled <?php } ?>>
 
                         <form method="post">
                             <input type="submit" name= <?php echo $car->getName(); ?>
-                            class="button" value= <?php echo 'in_service';
-                            if ($car->getStatus()->getStatus() === 'in_service') { ?> disabled <?php } ?>>
+                            class="button" value="in service"
+                                <?php if ($car->getStatus()->getStatus() === 'in service'
+                                    || $car->getStatus()->getStatus() === 'not available') { ?> disabled <?php } ?>>
 
             </td>
         </tr>

@@ -4,34 +4,41 @@
     "model": "Civic",
     "consumption": "7",
     "price": "10077",
-    "status": "available"
+    "status": "in service"
   },
   {
     "name": "Audi",
     "model": "A4",
     "consumption": "7",
     "price": "30200",
-    "status": "rent"
+    "status": "available"
   },
   {
     "name": "Toyota",
     "model": "Corolla",
     "consumption": "7",
     "price": "28000",
-    "status": "available"
+    "status": "rent"
   },
   {
     "name": "Volvo",
     "model": "V60",
     "consumption": "9",
     "price": "40000",
-    "status": "in_service"
+    "status": "rent"
   },
   {
     "name": "BMW",
     "model": "X5",
     "consumption": "9",
     "price": "56000",
-    "status": "available"
+    "status": "in service"
+  },
+  {
+    "name": "Porsche",
+    "model": "cayenne",
+    "consumption": "10",
+    "price": "70000",
+    "status": "not available"
   }
 ]
